@@ -1568,4 +1568,6 @@ async def place_option_market_order(
 
 # Run the server
 if __name__ == "__main__":
+    print("Starting Alpaca MCP Server...")
+    # Initialize the MCP server with the Alpaca trade client
     mcp.run(transport='stdio')
